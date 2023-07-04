@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>IST4035 Students</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body onload="fetchStudents()">
+        <h1>Student Register</h1>
+        <div>
+            <form>
+                <label>
+                    <span>Student id:</span>
+                    <input id="studentId" type="text" />
+                </label>
+
+                <label>
+                    <span>Student name:</span>
+                    <input id="studentName" type="text" />
+                </label>
+
+                <label>
+                    <span>Grade:</span>
+                    <input id="studentGrade" type="text" />
+                </label>
+
+                <label>
+                    <span> </span>
+                    <button>Add student</button>
+                </label>
+            </form>
+            <table id="content">
+            </table>
+        </div>
+        <div id="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</html>
